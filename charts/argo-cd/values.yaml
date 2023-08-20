@@ -9,3 +9,10 @@ argo-cd:
         - type: helm
           name: argo-cd
           url: https://argoproj.github.io/argo-helm
+  ingress:
+    enabled: true
+    hosts:
+      - my.argocd.example
+    paths:
+      - /
+    pathType: Prefix
